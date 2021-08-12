@@ -1,7 +1,7 @@
 const Tesseract =  require('tesseract.js');
 
 Tesseract.recognize(
-  'testImage.jpg',
+  'image.jpg',
   'eng',
   { logger: m => console.log(m) }
 ).then(({ data: { text } }) => {
