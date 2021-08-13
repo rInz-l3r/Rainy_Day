@@ -1,15 +1,24 @@
 <template>
-  <hello-world />
+    <v-container fluid>
+      <v-row>
+        <working/>
+      </v-row>
+      <v-row>
+        <upload/>
+      </v-row>
+    </v-container>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import working from '../components/Title.vue'
+  import upload from '../components/Upload.vue'
 
   export default {
     name: 'Home',
 
     components: {
-      HelloWorld,
+        working,
+        upload,
     },
   }
 </script>
