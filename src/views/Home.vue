@@ -1,24 +1,24 @@
 <template>
-    <v-container fluid>
-      <v-row>
-        <working/>
-      </v-row>
-      <v-row>
-        <upload/>
-      </v-row>
-    </v-container>
+  <v-card>
+    <v-toolbar
+    src = "../assets/title.jpg">
+        <v-toolbar-title class="font-weight-light">Rainy Day</v-toolbar-title>
+    </v-toolbar>
+    <v-file-input
+    accept="image/*"
+    label="File input"
+    ></v-file-input>
+  </v-card>
 </template>
 
 <script>
-  import working from '../components/Title.vue'
-  import upload from '../components/Upload.vue'
+  // import upload from '../components/Upload.vue'
 
   export default {
     name: 'Home',
 
     components: {
-        working,
-        upload,
+        // upload,
     },
   }
 </script>
